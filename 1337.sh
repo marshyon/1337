@@ -3,11 +3,6 @@
 # Author: Haitham Aouati
 # GitHun: github.com/haithamaouati
 
-clear
-
-figlet -f standard 1337
-echo -e "by Haitham Aouati\n"
-
 # Function to encrypt a character to leet code
 leet_encrypt() {
     case $1 in
@@ -33,4 +28,4 @@ for ((i = 0; i < ${#input}; i++)); do
     encrypted="${encrypted}$(leet_encrypt "${input:$i:1}")"
 done
 
-echo "Leet (1337) code: $encrypted"
+echo $encrypted
